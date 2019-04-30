@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students Management System</title>
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1> Student Information Management System</h1>
+
+
+    <!-- old simple html form     -->
+    <!-- <form action="/post" method="POST">
+        First Name: <input type="text" name="firstName"><br>
+        Last Name: <input type="text" name="lastName"><br>
+        Roll Number: <input type="number" name="rollNo" id=""><br>
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <!-- <form action="/get" method="POST">
+        Search Roll number: <input type="text" name="toSearch" id=""><br>
+        <input type="submit" value="Search">
+    </form> -->
+
+    <!-- !!! -->
+
+    <!-- new bootstrap form -->
+    <form action="/post" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter First Name" name="firstName">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail2">Last Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+                placeholder="Enter Last Name" name="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail3">Roll Number</label>
+            <input type="number" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp"
+                placeholder="Enter Roll Number" name="rollNo">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <form action="/get" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail4">Search Student</label>
+            <input type="text" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp"
+                placeholder="Search Roll Number" name="toSearch">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    <!-- // -->
+</body>
+
+</html>
